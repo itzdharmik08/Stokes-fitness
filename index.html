@@ -282,93 +282,71 @@
         <div class="section-divider center"></div>
       </div>
 
-      <!-- 3D Carousel -->
-      <div class="carousel-container">
-        <button class="carousel-arrow carousel-prev" aria-label="Previous">
-          <i class="bi bi-chevron-left"></i>
-        </button>
+      <!-- Tabs for Images and Videos -->
+      <div class="media-tabs">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="videos">Videos</button>
+          <button class="tab-btn" data-tab="images">Images</button>
+        </div>
 
-        <div class="carousel-3d">
-          <div class="carousel-track">
-            <!-- Slide 1 - Image -->
-            <div class="carousel-slide">
-              <div class="media-card">
-                <div class="media-wrapper">
-                  <img src="images/m3.jpg" alt="Client transformation" class="media-img">
-                </div>
-              </div>
+        <!-- Images Tab -->
+        <div class="tab-panel" id="images-tab">
+          <div class="media-grid">
+            <div class="media-item">
+              <img src="images/m7.webp" alt="Client transformation" class="media-img">
             </div>
-            <!-- Slide 3 - Image -->
-            <div class="carousel-slide">
-              <div class="media-card">
-                <div class="media-wrapper">
-                  <img src="images/m5.jpg" alt="Client transformation" class="media-img">
-                </div>
-              </div>
+            <div class="media-item">
+              <img src="images/m5.jpg" alt="Client transformation" class="media-img">
             </div>
-            <!-- Slide 5 - Image -->
-            <div class="carousel-slide">
-              <div class="media-card">
-                <div class="media-wrapper">
-                  <img src="images/m6.jpg" alt="Client transformation" class="media-img">
-                </div>
-              </div>
+            <div class="media-item">
+              <img src="images/m6.webp" alt="Client transformation" class="media-img">
             </div>
-            <div class="carousel-slide">
-              <div class="media-card">
-                <div class="media-wrapper">
-                  <img src="images/m7.jpg" alt="Client transformation" class="media-img">
-                </div>
-              </div>
+            <div class="media-item">
+              <img src="images/m1.jpg" alt="Client transformation" class="media-img">
             </div>
-            <!-- Slide 2 - Video -->
-            <div class="carousel-slide">
-              <div class="media-card">
-                <div class="media-wrapper video-wrapper">
-                  <video src="images/v2.mp4" class="media-video" autoplay muted loop playsinline></video>
-                </div>
-              </div>
+            <div class="media-item">
+              <img src="images/m2.jpg" alt="Client transformation" class="media-img">
             </div>
-            <!-- Slide 4 - Video -->
-            <div class="carousel-slide">
-              <div class="media-card">
-                <div class="media-wrapper video-wrapper">
-                  <video src="images/v5.mp4" class="media-video" autoplay muted loop playsinline></video>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 6 - Video -->
-            <div class="carousel-slide">
-              <div class="media-card">
-                <div class="media-wrapper video-wrapper">
-                  <video src="images/v6.mp4" class="media-video" autoplay muted loop playsinline></video>
-                </div>
-              </div>
+            <div class="media-item">
+              <img src="images/m3.jpg" alt="Client transformation" class="media-img">
             </div>
           </div>
         </div>
 
-        <button class="carousel-arrow carousel-next" aria-label="Next">
-          <i class="bi bi-chevron-right"></i>
-        </button>
-
-        <div class="carousel-dots">
-          <span class="carousel-dot active"></span>
-          <span class="carousel-dot"></span>
-          <span class="carousel-dot"></span>
-          <span class="carousel-dot"></span>
-          <span class="carousel-dot"></span>
-          <span class="carousel-dot"></span>
-        </div>
-        <div class="carousel-counter">
-          <span class="current">01</span>
-          <span class="separator">/</span>
-          <span class="total">06</span>
-        </div>
-        <div class="carousel-swipe-hint">
-          <i class="bi bi-arrow-left"></i>
-          <span>SWIPE TO SEE MORE</span>
-          <i class="bi bi-arrow-right"></i>
+        <!-- Videos Tab -->
+        <div class="tab-panel active" id="videos-tab">
+          <div class="media-grid">
+            <div class="media-item video-item">
+              <video autoplay muted loop playsinline class="w-100 h-100 rounded-2xl">
+               <source src="images/v2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="media-item video-item">
+              <video autoplay muted loop playsinline class="w-100 h-100 rounded-2xl">
+              <source src="images/v5.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="media-item video-item">
+              <video autoplay muted loop playsinline class="w-100 h-100 rounded-2xl">
+              <source src="images/v6.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="media-item video-item">
+              <video autoplay muted loop playsinline class="w-100 h-100 rounded-2xl">
+              <source src="images/v7.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="media-item video-item">
+              <video autoplay muted loop playsinline class="w-100 h-100 rounded-2xl">
+              <source src="images/v8.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="media-item video-item">
+              <video autoplay muted loop playsinline class="w-100 h-100 rounded-2xl">
+              <source src="images/v9.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -611,7 +589,7 @@
     <div class="container">
       <div class="row align-items-center gy-3">
         <div class="col-12 col-sm-4 text-center text-sm-start">
-          <div class="footer-brand">Stokes<span> fitness</span> <span
+          <div class="footer-brand">Steve<span> Mac</span> <span
               style="color:rgba(255,255,255,0.3);font-weight:300;font-size:1rem;">| Fitness coaching</span></div>
         </div>
         <div class="col-12 col-sm-4 text-center">
@@ -653,7 +631,7 @@
       </p>
       <div class="thankyou-divider"></div>
       <div class="thankyou-social">
-        <span>While you wait, follow Shaun:</span>
+        <span>While you wait, follow Steve:</span>
         <div class="thankyou-links">
           <a href="https://www.instagram.com/stokes_fitness/" target="_blank" class="ty-link ig">
             <i class="bi bi-instagram"></i> Instagram
